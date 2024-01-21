@@ -1,0 +1,30 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          ip-api:
+            url: http://ip-api.com
+  datasource:
+    url: jdbc:postgresql://localhost:5433/fileprocessor
+    username: user
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+blocked:
+  countries:
+    - China
+    - Spain
+    - USA
+  isps:
+    - AWS
+    - GCP
+    - Azure
+
+server:
+  port: 8080
