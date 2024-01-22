@@ -43,7 +43,7 @@ public class FileProcessorApplicationIT {
         1afb6f5d-a7c2-4311-a92d-974f3180ff5e|3X3D35|Jenny Walters|Likes Avocados|Rides A Scooter|8.5|15.3""";
     private static final String OUTPUT_FILE = "[{\"name\":\"John Smith\",\"transport\":\"Rides A Bike\",\"topSpeed\":\"12.1\"},{\"name\":\"Mike Smith\",\"transport\":\"Drives an SUV\",\"topSpeed\":\"95.5\"},{\"name\":\"Jenny Walters\",\"transport\":\"Rides A Scooter\",\"topSpeed\":\"15.3\"}]";
     private static final String PARTIAL_OUTPUT_FILE = "[{\"name\":\"John Smith\",\"transport\":\"Rides A Bike\",\"topSpeed\":\"12.1\"},{\"name\":\"Jenny Walters\",\"transport\":\"Rides A Scooter\",\"topSpeed\":\"15.3\"}]";
-    public static final String IP_ADDRESS = "31.63.127.255";
+    private static final String IP_ADDRESS = "31.63.127.255";
 
     @Autowired
     MockMvc mockMvc;
